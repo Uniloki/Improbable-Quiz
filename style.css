@@ -1,0 +1,85 @@
+body {
+  height: 100vh;
+  background: linear-gradient(#30CFD0, #330867);
+}
+.start-screen .title {
+  font-family: 'Montserrat Subrayada', sans-serif;
+  text-shadow: 10px 10px 10px cyan;
+  -webkit-text-stroke: 1px black;
+  color: #52b0e3;
+  text-align: center;
+  font-size: 40px;
+  padding: 20px;
+}
+.start-screen .title:hover {
+  color: red;
+}
+.start-screen .parent {
+  width: 150px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.start-screen .parent div {
+  margin: 0 auto;
+}
+.start-screen .fake-button {
+  padding: 5px 10px 5px 10px;
+  background-color: darkslateblue;
+  color: white;
+  font-family: 'Nova Cut', cursive;
+  box-shadow: inset 0px -3px 7px 0px #29bbff;
+  background: linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+  background-color: #2dabf9;
+  border-radius: 3px;
+  border: 1px solid #30CFD0;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #263666;
+}
+.start-screen .fake-button:hover {
+  background: linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+  background-color: #0688fa;
+}
+.start-screen .real-button {
+  display: block;
+}
+.start-screen #credits {
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.start-screen #credits button {
+  padding: 20px;
+}
+.start-screen #credits p {
+  padding-bottom: 50px;
+  color: white;
+}
+.start-screen .top-button {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.start-screen .right-button {
+  grid-area: 2 / 1 / 3 / 2;
+  transform: rotate(-90deg);
+}
+.start-screen .bott-button {
+  grid-area: 3 / 2 / 4 / 3;
+  transform: rotate(180deg);
+}
+.start-screen .left-button {
+  grid-area: 2 / 3 / 3 / 4;
+  transform: rotate(90deg);
+}
+.start-screen .center-button {
+  grid-area: 2 / 2 / 3 / 3;
+}

@@ -1,0 +1,88 @@
+body{
+    height: 100vh;
+    background: linear-gradient(#30CFD0, #330867);
+}
+.start-screen{
+    .title{
+        font-family: 'Montserrat Subrayada', sans-serif;
+        text-shadow: 10px 10px 10px cyan;
+        -webkit-text-stroke: 1px black;
+        color: #52b0e3;
+        text-align: center;
+        font-size: 40px;
+        padding: 20px;
+        &:hover{
+            color: red;
+        }
+        }    
+    .parent {
+        width: 150px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        div{
+            margin: 0 auto;
+        }
+    }
+    .fake-button{
+        padding: 5px 10px 5px 10px;
+        background-color: darkslateblue;
+        color:white;
+        font-family: 'Nova Cut', cursive;
+        box-shadow:inset 0px -3px 7px 0px #29bbff;
+        background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+        background-color:#2dabf9;
+        border-radius:3px;
+        border:1px solid #30CFD0;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:15px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #263666;
+        &:hover{
+            background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+        	background-color:#0688fa;
+        }
+    }
+    .real-button{
+        display: block;
+    }
+    #credits{
+        padding: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        button{
+            padding: 20px;
+        }
+        p{
+            padding-bottom: 50px;
+            color: white;
+        }
+    }
+    // Avert your eyes
+    .top-button { 
+        grid-area: 1 e("/") 2 e("/") 2 e("/") 3;
+    }
+    .right-button { 
+        grid-area: 2 e("/") 1 e("/") 3 e("/") 2;
+        transform: rotate(-90deg); 
+    }
+    .bott-button { 
+        grid-area: 3 e("/") 2 e("/") 4 e("/") 3;
+        transform: rotate(180deg); 
+    }
+    .left-button { 
+        grid-area: 2 e("/") 3 e("/") 3 e("/") 4;
+        transform: rotate(90deg); 
+    }
+    .center-button { 
+        grid-area: 2 e("/") 2 e("/") 3 e("/") 3; 
+    }
+}
